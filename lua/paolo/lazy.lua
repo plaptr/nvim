@@ -23,8 +23,13 @@ local plugins = {
     { 'mg979/vim-visual-multi',        branch = 'master' },
     { "folke/which-key.nvim",          event = "VeryLazy", opts = {} },
     "windwp/nvim-ts-autotag",
-    { 'laytan/tailwind-sorter.nvim', dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
-        build = 'cd formatter && npm i && npm run build', config = true },
+    { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } },
+    {
+        'laytan/tailwind-sorter.nvim',
+        dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
+        build = 'cd formatter && npm i && npm run build',
+        config = true
+    },
 }
 
 
