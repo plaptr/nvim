@@ -1,4 +1,5 @@
 vim.opt.guicursor = ""
+vim.opt.cursorline = true
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -30,12 +31,11 @@ vim.opt.colorcolumn = "80"
 
 
 function _G.MyFoldText()
-  return vim.fn.getline(vim.v.foldstart)
+    return vim.fn.getline(vim.v.foldstart)
 end
 
 vim.opt.foldmethod = "expr"
-vim.opt.fillchars:append({fold = " "})
+vim.opt.fillchars:append({ fold = " " })
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldtext = 'v:lua.MyFoldText()'
 vim.opt.foldlevel = 999
-
