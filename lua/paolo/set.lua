@@ -39,3 +39,5 @@ vim.opt.fillchars:append({ fold = " " })
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldtext = 'v:lua.MyFoldText()'
 vim.opt.foldlevel = 999
+
+vim.opt.ignorecase = true
