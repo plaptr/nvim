@@ -41,3 +41,4 @@ vim.opt.foldtext = 'v:lua.MyFoldText()'
 vim.opt.foldlevel = 999
 
 vim.opt.ignorecase = true
+vim.opt.smartcase = true
