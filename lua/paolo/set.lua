@@ -1,6 +1,8 @@
 vim.opt.guicursor = ""
 vim.opt.cursorline = true
 
+vim.opt.linespace = 6
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -42,3 +44,4 @@ vim.opt.foldlevel = 999
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+

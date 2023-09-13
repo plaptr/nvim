@@ -28,3 +28,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<C-a>f", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+
+vim.keymap.set("n", "<leader>cd", "print ciao<CR>")
+

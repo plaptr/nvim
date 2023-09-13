@@ -12,7 +12,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 local plugins = {
-    { 'catppuccin/nvim',                 name = 'catppuccin', priority = 1000 },
+    {
+        "olimorris/onedarkpro.nvim",
+        priority = 1000 -- Ensure it loads first
+    },
     { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" },
     'theprimeagen/harpoon',
     { 'nvim-telescope/telescope.nvim', tag = '0.1.2',      dependencies = { 'nvim-lua/plenary.nvim' } },
